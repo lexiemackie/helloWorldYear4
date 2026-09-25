@@ -151,6 +151,7 @@ main {
     width: 100%;
 
     margin-bottom: 10dvh;
+    padding-bottom: env(safe-area-inset-bottom);
 
 }
 
