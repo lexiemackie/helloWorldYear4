@@ -58,7 +58,7 @@
 body {
     /* 1. Tell the background to scale and cover the entire area */
     box-sizing: border-box;
-    min-height: 100%;
+    min-height: 100dvh;
     margin: 0px;
 
     display: flex;
