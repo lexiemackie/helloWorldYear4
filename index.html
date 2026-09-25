@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Sintony font -->
+    <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Pinyon font, fancy writing-->
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <!-- Caveat, handwriting-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!-- Aleo, typewriter-->
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./HelloWorldStylesheet.css">
+
+    <title>Hello Lexie</title>
+    <meta charset="UTF-8">
+
+</head>
+
+
+<body>
+    <header>
+        <div class="hLeftColumn pinyon">
+            <div class="title"> Hello, I'm Lexie </div>
+        </div>
+    </header>
+    <main>
+        <div class="biobox">
+            <div class="bio aleo">
+                <div class="listed"><b>Name:</b> Lexie</div>
+                <div class="listed"><b>Pronouns:</b> She/Her</div>
+                <div class="listed"><b>Year:</b> 4</div>
+                <div class="listed"><b>Course:</b> IXD</div>
+                <p>Hi, I'm Lexie, I'm a Year 4 student on IXD and I've been practicing HTML and CSS over the summer
+                    so I thought this would be a fun way to very quickly introduce myself!
+                </p>
+
+                <p>I gave myself half a day to put this together so have some patience with what i'm sure will be a
+                    slightly faulty page. </p>
+            </div>
+        </div>
+        <div class="currentlybox">
+            <div class="currentlyTitle pinyon"> Currently </div>
+            <div class="currentlylist aleo2"> <b>Reading:</b> Design for the Real World - Victor Papenek </div>
+            <div class="currentlylist aleo2"> <b>Listening:</b> Last Night - Lush </div>
+            <div class="currentlylist aleo2"> <b>Watching:</b> The Mentalist </div>
+        </div>
+        <div class="likesdislikesbox">
+            <div class="likesbox">
+                <div class="likesTitle pinyon"> Likes </div>
+                <div class="likeslist aleo3">
+                    <ul>
+                        <li>the moomins</li>
+                        <li>horror films</li>
+                        <li>tetris</li>
+                        <li>new wave</li>
+                        <li>dreampop</li>
+                        <li>studio ghibli</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="dislikesbox">
+                <div class="likesTitle pinyon"> Dislikes </div>
+                <div class="likeslist aleo3">
+                    <ul>
+                        <li>boiled eggs</li>
+                        <li>fifa</li>
+                        <li>ticks</li>
+                        <li>the flu</li>
+                        <li>slow walkers</li>
+                        <li>baby corn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="favouritebox">
+            <div class="currentlyTitle pinyon">
+                Favourites
+            </div>
+        </div>
+        <div class="tabbox">
+            <button class="aleo2 active" onclick="openTab(event, 'songs')"> <b>songs</b> </button>
+            <button class="aleo2" onclick="openTab(event, 'series')"> <b>series</b> </button>
+            <button class="aleo2" onclick="openTab(event, 'films')"> <b>films</b> </button>
+            <button class="aleo2" onclick="openTab(event, 'books')"> <b>books</b> </button>
+        </div>
+
+        <div id="songs" class="tab">
+            <div class="tabcontent">
+                <img src="./Assets/theChauffeurSONG.png" alt="Album cover for the 1982 Album Rio by Duran Duran">
+                <p class="aleo2"><b>The Chauffeur</b> - Duran Duran</p>
+            </div>
+            <div class=" tabcontent">
+                <img src="./Assets/heavenInYourHeadSONG.jpg"
+                    alt="Cover art for Heaven in Your Head by the Nuclear Daisies">
+                <p class="aleo2"><b>Heaven in Your Head</b> - Nuclear Daisies</p>
+            </div>
+            <div class="tabcontent">
+                <img src="./Assets/beautySchoolSONG.jpg" alt="Album cover for the 2010 Album Diamond Eyes by Deftones">
+                <p class="aleo2"><b>Beauty School</b> - Deftones</p>
+            </div>
+        </div>
+
+        <div id="series" class="tab" style="display:none">
+            <div class="tabcontent">
+                <img src="./Assets/russianDollSeries.jpg" alt="Poster for Netflix series Russian Doll">
+                <p class="aleo2"><b>Russian Doll</b></p>
+            </div>
+            <div class=" tabcontent">
+                <img src="./Assets/beeAndPuppycatSeries.jpg" alt="Poster for the series Bee and Puppycat">
+                <p class="aleo2"><b>Bee and Puppycat</b></p>
+            </div>
+            <div class="tabcontent">
+                <img src="./Assets/severanceSeries.jpg" alt="Poster for the series Severance">
+                <p class="aleo2"><b>Severance</b></p>
+            </div>
+        </div>
+
+        <div id="films" class="tab" style="display:none">
+            <div class="tabcontent">
+                <img src="./Assets/coralineFilm.jpg" alt="Poster for the film Coraline">
+                <p class="aleo2"><b>Coraline</b></p>
+            </div>
+            <div class=" tabcontent">
+                <img src="./Assets/theGrandBudapestHotelFilm.jpg" alt="Poster for the film the Grand Budapest Hotel">
+                <p class="aleo2"><b>The Grand Budapest Hotel</b></p>
+            </div>
+            <div class="tabcontent">
+                <img src="./Assets/paddingtonTwoFilm.jpg" alt="Poster for film Paddington 2">
+                <p class="aleo2"><b>Paddington 2</b></p>
+            </div>
+        </div>
+
+        <div id="books" class="tab" style="display:none">
+            <div class="tabcontent">
+                <img src="./Assets/theMemoryPoliceBook.jpg" alt="Cover art for the book The Memory Police">
+                <p class="aleo2"><b>The Memory Police</b> - Yoko Ogawa</p>
+            </div>
+            <div class=" tabcontent">
+                <img src="./Assets/rebeccaBook.jpg" alt="Cover art for the book Rebecca">
+                <p class="aleo2"><b>Rebecca</b> - Daphne Du Maurier</p>
+            </div>
+            <div class="tabcontent">
+                <img src="./Assets/theTalentedMrRipleyBook.jpg" alt="Cover art for the book The Talented Mr. Ripley">
+                <p class="aleo2"><b>The Talented Mr. Ripley</b> - Patricia Highsmith</p>
+            </div>
+        </div>
+
+        <script>
+            function openTab(evt, tabName) {
+                const tabs = document.querySelectorAll(".tab");
+
+                tabs.forEach(tab => {
+                    tab.style.display = "none";
+                });
+
+                const tabButtons = document.querySelectorAll(".tabbox button");
+                tabButtons.forEach(button => {
+                    button.classList.remove("active");
+                });
+
+
+                document.getElementById(tabName).style.display = "flex";
+
+                evt.currentTarget.classList.add("active");
+            }
+        </script>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+/* FONTS */
+.pinyon {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255),
+        0 0 15px var(--faeshadow),
+        -1px 0 15px var(--faeshadow),
+        0 -1px 15px var(--faeshadow),
+        1px 0 15px var(--faeshadow),
+        0 1px 15px var(--faeshadow);
+}
+
+.caveat {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    color: rgba(0, 4, 105, 0.616);
+
+    /* text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.2); */
+}
+
+.aleo {
+    font-family: "Aleo", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 4, 105, 0.7);
+}
+
+.aleo2 {
+    font-family: "Aleo", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(0, 4, 105, 0.75);
+}
+
+.aleo3 {
+    font-family: "Aleo", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(0, 4, 99);
+}
+
+
+
+/* VARIABLES */
+:root {
+    --faeshadow: rgba(119, 0, 255, 0.486);
+
+}
+
+/*CSS FORMATTING*/
+body {
+    /* 1. Tell the background to scale and cover the entire area */
+    box-sizing: border-box;
+    min-height: 100%;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+
+    /* background-image: url("Assets/mountain.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    /* Places it behind all page content */
+    background-image: url("Assets/mountain.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*header conainer*/
+header {
+    /*this code below will make it that the height is the final height and everything inside will shrink, so padding is inside*/
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+
+    height: 15vh;
+    width: 100%;
+
+}
+
+/*left header conainer*/
+.hLeftColumn {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+
+    /* border testing */
+    /* border-style: solid;
+    border-color: black; */
+
+}
+
+/*faerie diary title box*/
+.title {
+    box-sizing: border-box;
+
+    height: auto;
+    width: 80%;
+    padding: 1%;
+
+    /* font-size: 5vw; */
+    font-size: calc(50px + 1.5vw);
+
+    text-align: center;
+
+    /* border testing */
+    /* border-style: solid;
+    border-color: black; */
+
+}
+
+main {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: calc(100vh - 15vh);
+    width: 100%;
+
+    margin-bottom: 10vh;
+
+}
+
+.biobox {
+    /* margin-top: 1%; */
+    margin: 1% auto 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 600px;
+    width: 70%;
+    height: 25vh;
+
+
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+
+    border-top-style: dashed;
+    border-top-width: 2px;
+    border-top-color: rgba(255, 255, 255);
+}
+
+
+.listed {
+    margin: 5px 0px 5px;
+}
+
+.bio {
+    box-sizing: border-box;
+
+    width: 95%;
+    height: 90%;
+
+    /* padding: 3%; */
+
+    font-size: calc(13px + 0.5vw);
+
+    text-align: left;
+    overflow-y: scroll;
+}
+
+
+
+.bio::-webkit-scrollbar {
+    width: 6px;
+    background-color: #00000000
+}
+
+.bio::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.575);
+    border-radius: 6px;
+}
+
+
+.currentlybox {
+    margin: 6vh auto auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 600px;
+    width: 70%;
+    height: auto;
+}
+
+.currentlyTitle {
+    box-sizing: border-box;
+    display: flex;
+
+    height: auto;
+    width: 100%;
+    font-size: calc(30px + 1.5vw);
+    text-align: center;
+}
+
+.currently {
+    box-sizing: border-box;
+    display: flex;
+
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.currentlylist {
+    margin-top: 2%;
+    box-sizing: border-box;
+
+    width: 95%;
+    height: auto;
+
+    padding: 3%;
+
+    font-size: calc(13px + 0.5vw);
+
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.6);
+    border-radius: 5px;
+
+    text-align: left;
+}
+
+.likesdislikesbox {
+    margin: 6vh auto auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 600px;
+    width: 70%;
+    height: auto;
+}
+
+.likesbox {
+    margin: 0vw 3vw 0vw 0vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dislikesbox {
+    margin: 0vw 0vw 0vw 3vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.likesTitle {
+    box-sizing: border-box;
+    display: flex;
+
+    height: auto;
+    width: 100%;
+    font-size: calc(25px + 1.5vw);
+    text-align: center;
+}
+
+.likeslist {
+    list-style-type: disc;
+    background-color: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.65), 0 0 20px rgba(255, 255, 255, 0.65);
+    border-radius: 5px;
+    font-size: calc(13px + 0.5vw);
+}
+
+ul {
+    color: rgba(0, 4, 105, 0.616);
+}
+
+.favouritebox {
+    margin: 6vh auto auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 600px;
+    width: 70%;
+    height: auto;
+}
+
+.tabbox {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto auto;
+
+    max-width: 600px;
+    width: 70%;
+    height: auto;
+    justify-content: left;
+    align-items: center;
+
+}
+
+/* .tabs {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.6);
+    border-radius: 15px;
+    font-size: calc(13px + 0.5vw);
+    padding: 10px;
+    margin-right: 2vw;
+} */
+
+.tabbox button {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.4);
+    border-radius: 15px 15px 0 0;
+    border: none;
+    font-size: calc(13px + 0.5vw);
+    padding: 10px 15px 10px 15px;
+    margin-right: 2vw;
+}
+
+.tabbox button.active {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.6);
+    border-radius: 15px 15px 0 0;
+    border: none;
+    font-size: calc(13px + 0.5vw);
+    padding: 10px 15px 10px 15px;
+    margin-right: 2vw;
+}
+
+
+.tab {
+    margin: 0 auto auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    max-width: 600px;
+    width: 70%;
+    height: auto;
+
+    font-size: calc(13px + 0.5vw);
+
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.6);
+    border-radius: 5px;
+
+    text-align: left;
+}
+
+.tabcontent {
+    margin: 10px 0 0;
+    /* width: 20vw; */
+    max-width: 180.5px;
+    width: 25vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+
+    padding: 5px;
+    font-size: calc(13px + 0.5vw);
+}
+
+.tabcontent img {
+    width: 95%;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+
+}
+
+@media (max-width: 600px) {
+
+    /* Expand content width on small screens */
+    .biobox,
+    .currentlybox,
+    .likesdislikesbox,
+    .favouritebox,
+    .tabbox,
+    .tab {
+        width: 80%;
+        /* Use more available screen width */
+    }
+
+    .tabcontent img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin: 0;
+    }
+
+    .title {
+        font-size: calc(30px + 4vw);
+
+    }
+}
+
+@media (max-width: 390px) {
+
+    /* Expand content width on small screens */
+    .biobox,
+    .currentlybox,
+    .likesdislikesbox,
+    .favouritebox,
+    .tabbox,
+    .tab {
+        width: 80%;
+        /* Use more available screen width */
+    }
+
+    .likesdislikesbox {
+        flex-direction: column;
+    }
+
+    .likesbox {
+        width: 100%
+    }
+
+    .dislikesbox {
+        width: 100%;
+        margin-top: 2vh;
+    }
+
+
+    .tabcontent img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin: 0;
+    }
+
+    .title {
+        font-size: calc(30px + 2vw);
+
+    }
+
+    .tabbox button {
+        font-size: calc(10px + 0.5vw);
+    }
+
+    .tabbox button.active {
+        font-size: calc(10px + 0.5vw);
+        font-weight: 800;
+    }
+}
