@@ -58,6 +58,7 @@
 body {
     /* 1. Tell the background to scale and cover the entire area */
     box-sizing: border-box;
+    padding-bottom: env(safe-area-inset-bottom);
     min-height: 100dvh;
     margin: 0px;
 
@@ -151,8 +152,6 @@ main {
     width: 100%;
 
     margin-bottom: 10dvh;
-    padding-bottom: env(safe-area-inset-bottom);
-
 }
 
 .biobox {
