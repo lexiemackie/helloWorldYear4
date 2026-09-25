@@ -272,7 +272,7 @@ main {
 }
 
 .likesbox {
-    margin: 0vw 3vw 0vw 0vw;
+    margin: 0vw 2vw 0vw 0vw;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -280,7 +280,7 @@ main {
 }
 
 .dislikesbox {
-    margin: 0vw 0vw 0vw 3vw;
+    margin: 0vw 0vw 0vw 2vw;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -449,7 +449,7 @@ ul {
         /* Use more available screen width */
     }
 
-    .likesdislikesbox {
+    /* .likesdislikesbox {
         flex-direction: column;
     }
 
@@ -460,7 +460,7 @@ ul {
     .dislikesbox {
         width: 100%;
         margin-top: 2dvh;
-    }
+    } */
 
 
     .tabcontent img {
